@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import 'tailwindcss/tailwind.css'
 
@@ -15,6 +14,12 @@ export default function Home() {
           <a className="text-blue-600">logging in</a>
         </Link>
       </p>
+
+      <Link href="/app/login">
+        <button className="mt-6 px-4 py-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-700">
+          Login
+        </button>
+      </Link>
     </div>
   )
 }
